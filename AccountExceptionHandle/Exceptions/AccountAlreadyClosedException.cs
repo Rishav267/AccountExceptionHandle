@@ -8,7 +8,7 @@ namespace AccountExceptionHandle.Exceptions
 {
     public class AccountAlreadyClosedException : ApplicationException
     {
-        public AccountAlreadyClosedException(string msg=null,Exception innerException = null)
+        public AccountAlreadyClosedException(string msg=null,Exception innerException = null) : base(msg,innerException)
         {
 
         }
